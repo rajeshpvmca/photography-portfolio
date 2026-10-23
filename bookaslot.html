@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character Encoding & Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Primary Meta Tags -->
+  <title>Book a Session &mdash; Project Specification &amp; Commissions | STACKLY</title>
+  <meta name="title" content="Book a Session &mdash; Project Specification &amp; Commissions | STACKLY">
+  <meta name="description" content="Let's create something worth remembering. Structured project specification and session inquiry for commercial and editorial photography commissions. Berlin studio and worldwide.">
+  <meta name="keywords" content="book photoshoot, photography booking, commercial photography session, hire editorial photographer, photo studio Berlin, project specification, Stackly Studio">
+  <meta name="author" content="Stackly Photography Studio">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23111'/><circle cx='16' cy='16' r='6' fill='%23c6a87d'/></svg>">
+
+  <!-- Google Web Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper 11 CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bookaslot-page">
+
+  <!-- ===================================================================
+       HEADER (Reusable Component)
+       Loaded dynamically via main.js from header.html
+       =================================================================== -->
+  <div id="site-header"></div>
+
+  <main id="main-content">
+
+    <!-- ===================================================================
+         SECTION 1: BOOK A SLOT HERO
+         "Let's create something worth remembering."
+         Left: Kicker, Display Headline, Lead text, Process anchor link
+         Right: Studio photo with "STUDIO I — BERLIN SET" badge
+         =================================================================== -->
+    <section class="py-5" id="bookaslot-hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          
+          <!-- Left Column: Copy & Link -->
+          <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-duration="700">
+            <span class="bookaslot-hero-kicker d-block text-uppercase fw-semibold mb-3">
+              BOOK A SESSION / 2024&ndash;2025
+            </span>
+            <h1 class="bookaslot-hero-title font-serif display-3 mb-4">
+              Let&rsquo;s create<br>
+              something worth<br>
+              remembering.
+            </h1>
+            <p class="bookaslot-hero-lead mb-4 max-w-540">
+              Tell me about your project, what you want to capture, and when you envision making it happen.
+            </p>
+            <div class="pt-2">
+              <a href="#how-it-works" class="bookaslot-process-link text-uppercase fw-semibold">
+                <span>SEE THE PROCESS FIRST</span>
+                <span class="ms-1" aria-hidden="true">&darr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Studio Photo with Badge -->
+          <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="bookaslot-hero-media position-relative mx-auto overflow-hidden">
+              <img src="assets/images/img_100.webp" alt="Studio I Berlin Set — draped backdrop and wooden stool" class="img-fluid w-100 bookaslot-hero-img" width="512" height="624">
+              <div class="bookaslot-hero-badge position-absolute bottom-0 start-0 m-3 py-1 px-3 bg-white">
+                <span class="bookaslot-hero-badge-txt text-uppercase fw-semibold">STUDIO I &mdash; BERLIN SET</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 2: DETAILED INQUIRY — PROJECT SPECIFICATION
+         Structured 5-section intake form with 01/05 ... 05/05 step indicators
+         =================================================================== -->
+    <section class="py-5" id="project-specification">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12 col-lg-9">
+            <span class="spec-kicker d-block text-uppercase fw-semibold mb-2">DETAILED INQUIRY</span>
+            <h2 class="spec-title font-serif display-4 mb-3">Project Specification</h2>
+            <p class="spec-subtitle max-w-700 mb-0">
+              A structured project intake to understand your concept, requirements, and timing before we speak. The more detail you share, the better we can prepare.
+            </p>
+          </div>
+        </div>
+
+        <!-- Intake Form Form Container -->
+        <div class="row">
+          <div class="col-12 col-xl-11">
+            <form class="project-spec-form" id="projectSpecForm" onsubmit="event.preventDefault(); alert('Thank you for your detailed inquiry. We review every submission carefully and respond within 24–48 hours.');">
+
+              <!-- ==========================================
+                   SECTION 01: YOUR DETAILS (01 / 05)
+                   ========================================== -->
+              <div class="form-step-block pt-4 pb-5" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="form-step-title font-serif fs-4 mb-0">Section 01 &mdash; Your Details</h3>
+                  <span class="form-step-counter text-uppercase fw-semibold">01 / 05</span>
+                </div>
+
+                <div class="row g-4">
+                  <!-- Full Name -->
+                  <div class="col-12 col-md-6">
+                    <label for="fullName" class="form-label text-uppercase fw-semibold form-field-lbl">FULL NAME *</label>
+                    <input type="text" class="form-control form-field-input" id="fullName" name="fullName" placeholder="e.g. Elena Rostova" required>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-12 col-md-6">
+                    <label for="emailAddress" class="form-label text-uppercase fw-semibold form-field-lbl">EMAIL ADDRESS *</label>
+                    <input type="email" class="form-control form-field-input" id="emailAddress" name="emailAddress" placeholder="e.g. elena@studio.com" required>
+                  </div>
+
+                  <!-- Phone Number (Optional) -->
+                  <div class="col-12 col-md-6">
+                    <label for="phoneNumber" class="form-label text-uppercase fw-semibold form-field-lbl">PHONE NUMBER (OPTIONAL)</label>
+                    <input type="tel" class="form-control form-field-input" id="phoneNumber" name="phoneNumber" placeholder="+49 (0) ...">
+                  </div>
+
+                  <!-- Company / Publication (Optional) -->
+                  <div class="col-12 col-md-6">
+                    <label for="companyName" class="form-label text-uppercase fw-semibold form-field-lbl">COMPANY / PUBLICATION (OPTIONAL)</label>
+                    <input type="text" class="form-control form-field-input" id="companyName" name="companyName" placeholder="e.g. Studio Editorial / Brand Name">
+                  </div>
+
+                  <!-- Where are you located -->
+                  <div class="col-12">
+                    <label for="locationCity" class="form-label text-uppercase fw-semibold form-field-lbl">WHERE ARE YOU LOCATED? *</label>
+                    <input type="text" class="form-control form-field-input" id="locationCity" name="locationCity" placeholder="City, Country where you or the brand is based" required>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="form-section-divider my-0">
+
+              <!-- ==========================================
+                   SECTION 02: YOUR PROJECT (02 / 05)
+                   ========================================== -->
+              <div class="form-step-block py-5" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="form-step-title font-serif fs-4 mb-0">Section 02 &mdash; Your Project</h3>
+                  <span class="form-step-counter text-uppercase fw-semibold">02 / 05</span>
+                </div>
+
+                <div class="row g-4">
+                  <!-- Project Name / Title -->
+                  <div class="col-12 col-md-6">
+                    <label for="projectName" class="form-label text-uppercase fw-semibold form-field-lbl">PROJECT NAME / TITLE *</label>
+                    <input type="text" class="form-control form-field-input" id="projectName" name="projectName" placeholder="e.g. Autumn 2025 Campaign / Editorial Series" required>
+                  </div>
+
+                  <!-- Project Type Dropdown -->
+                  <div class="col-12 col-md-6">
+                    <label for="projectType" class="form-label text-uppercase fw-semibold form-field-lbl">PROJECT TYPE *</label>
+                    <select class="form-select form-field-select" id="projectType" name="projectType" required>
+                      <option value="" selected disabled>Select Project Type...</option>
+                      <option value="editorial">Editorial &amp; Fashion</option>
+                      <option value="commercial">Commercial &amp; Advertising</option>
+                      <option value="architectural">Architectural &amp; Spaces</option>
+                      <option value="still-life">Product &amp; Still Life</option>
+                      <option value="portrait">Portrait &amp; Profile</option>
+                      <option value="campaign">Brand Campaign &amp; Lookbook</option>
+                    </select>
+                  </div>
+
+                  <!-- Brief Description / Concept -->
+                  <div class="col-12">
+                    <label for="projectConcept" class="form-label text-uppercase fw-semibold form-field-lbl">BRIEF DESCRIPTION / CONCEPT *</label>
+                    <textarea class="form-control form-field-textarea" id="projectConcept" name="projectConcept" rows="4" placeholder="Tell us what you want to shoot, the concept or mood, and what the final imagery should accomplish..." required></textarea>
+                  </div>
+
+                  <!-- Estimated Number of Deliverables -->
+                  <div class="col-12">
+                    <label for="deliverablesVolume" class="form-label text-uppercase fw-semibold form-field-lbl">ESTIMATED NUMBER OF DELIVERABLES</label>
+                    <select class="form-select form-field-select" id="deliverablesVolume" name="deliverablesVolume">
+                      <option value="" selected disabled>Select Deliverables Volume...</option>
+                      <option value="1-5">1&ndash;5 Final Retouched Images</option>
+                      <option value="5-10">5&ndash;10 Final Retouched Images</option>
+                      <option value="10-20">10&ndash;20 Final Retouched Images</option>
+                      <option value="20-50">20&ndash;50 Comprehensive Image Library</option>
+                      <option value="50+">Full Campaign Suite (50+ Images)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="form-section-divider my-0">
+
+              <!-- ==========================================
+                   SECTION 03: SHOOT DETAILS (03 / 05)
+                   ========================================== -->
+              <div class="form-step-block py-5" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="form-step-title font-serif fs-4 mb-0">Section 03 &mdash; Shoot Details</h3>
+                  <span class="form-step-counter text-uppercase fw-semibold">03 / 05</span>
+                </div>
+
+                <div class="row g-4">
+                  <!-- Preferred Date / Range -->
+                  <div class="col-12 col-md-6">
+                    <label for="preferredDate" class="form-label text-uppercase fw-semibold form-field-lbl">PREFERRED DATE / RANGE *</label>
+                    <input type="text" class="form-control form-field-input" id="preferredDate" name="preferredDate" placeholder="e.g. Mid-October 2025 / Flexible" required>
+                  </div>
+
+                  <!-- Location Preference (Radios) -->
+                  <div class="col-12 col-md-6">
+                    <label class="form-label text-uppercase fw-semibold form-field-lbl d-block mb-3">LOCATION PREFERENCE *</label>
+                    <div class="d-flex flex-wrap align-items-center gap-4 pt-1">
+                      <div class="form-check custom-radio-wrap">
+                        <input class="form-check-input" type="radio" name="locationPreference" id="locStudio" value="studio" checked required>
+                        <label class="form-check-label text-dark fw-medium" for="locStudio">
+                          Studio (Berlin)
+                        </label>
+                      </div>
+                      <div class="form-check custom-radio-wrap">
+                        <input class="form-check-input" type="radio" name="locationPreference" id="locLocation" value="location" required>
+                        <label class="form-check-label text-dark fw-medium" for="locLocation">
+                          On Location / Travel
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Shoot Duration -->
+                  <div class="col-12 col-md-6">
+                    <label for="shootDuration" class="form-label text-uppercase fw-semibold form-field-lbl">SHOOT DURATION *</label>
+                    <select class="form-select form-field-select" id="shootDuration" name="shootDuration" required>
+                      <option value="" selected disabled>Select Shoot Duration...</option>
+                      <option value="half-day">Half Day (Up to 4 Hours)</option>
+                      <option value="full-day">Full Day (8 Hours)</option>
+                      <option value="multi-day">Multi-Day Production (2&ndash;3 Days)</option>
+                      <option value="extended">Extended Campaign (4+ Days)</option>
+                    </select>
+                  </div>
+
+                  <!-- Creative Direction -->
+                  <div class="col-12 col-md-6">
+                    <label for="creativeDirection" class="form-label text-uppercase fw-semibold form-field-lbl">CREATIVE DIRECTION *</label>
+                    <select class="form-select form-field-select" id="creativeDirection" name="creativeDirection" required>
+                      <option value="" selected disabled>Select Creative Direction...</option>
+                      <option value="full-direction">We provide full creative direction &amp; art direction</option>
+                      <option value="client-brief">Client provides comprehensive creative brief &amp; deck</option>
+                      <option value="collaborative">Collaborative / Shared direction &amp; concept development</option>
+                    </select>
+                  </div>
+
+                  <!-- Production & Talent Needed -->
+                  <div class="col-12">
+                    <label for="productionTalent" class="form-label text-uppercase fw-semibold form-field-lbl">PRODUCTION &amp; TALENT NEEDED</label>
+                    <select class="form-select form-field-select" id="productionTalent" name="productionTalent">
+                      <option value="" selected disabled>Select Production Support...</option>
+                      <option value="full-production">Full Production (Casting, Styling, H/MU, Set Design, Locations)</option>
+                      <option value="styling-hmu">Styling &amp; Hair / Makeup Only</option>
+                      <option value="casting-only">Casting &amp; Talent Coordination Only</option>
+                      <option value="location-only">Location Scouting &amp; Permits Only</option>
+                      <option value="photography-only">None &mdash; Photography &amp; Direction Only (Client handles crew)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="form-section-divider my-0">
+
+              <!-- ==========================================
+                   SECTION 04: BUDGET & DELIVERABLES (04 / 05)
+                   ========================================== -->
+              <div class="form-step-block py-5" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="form-step-title font-serif fs-4 mb-0">Section 04 &mdash; Budget &amp; Deliverables</h3>
+                  <span class="form-step-counter text-uppercase fw-semibold">04 / 05</span>
+                </div>
+
+                <div class="row g-4">
+                  <!-- Estimated Budget -->
+                  <div class="col-12 col-md-6">
+                    <label for="estimatedBudget" class="form-label text-uppercase fw-semibold form-field-lbl">ESTIMATED BUDGET *</label>
+                    <select class="form-select form-field-select" id="estimatedBudget" name="estimatedBudget" required>
+                      <option value="" selected disabled>Select Budget Range...</option>
+                      <option value="5k-10k">&euro;5,000 &ndash; &euro;10,000</option>
+                      <option value="10k-25k">&euro;10,000 &ndash; &euro;25,000</option>
+                      <option value="25k-50k">&euro;25,000 &ndash; &euro;50,000</option>
+                      <option value="50k+">&euro;50,000+</option>
+                      <option value="flexible">Flexible / To be defined together</option>
+                    </select>
+                  </div>
+
+                  <!-- Usage & Licensing Requirements -->
+                  <div class="col-12 col-md-6">
+                    <label for="licensingRequirements" class="form-label text-uppercase fw-semibold form-field-lbl">USAGE &amp; LICENSING REQUIREMENTS *</label>
+                    <select class="form-select form-field-select" id="licensingRequirements" name="licensingRequirements" required>
+                      <option value="" selected disabled>Commercial / Campaign Rights...</option>
+                      <option value="editorial">Editorial / Press Use Only</option>
+                      <option value="digital-1yr">Digital &amp; Social Media (1 Year)</option>
+                      <option value="commercial-2yr">Global Commercial &amp; Advertising (2 Years)</option>
+                      <option value="buyout">Full Buyout / Perpetual Rights</option>
+                      <option value="consult">To be determined during consultation</option>
+                    </select>
+                  </div>
+
+                  <!-- How did you hear about us -->
+                  <div class="col-12">
+                    <label for="referralSource" class="form-label text-uppercase fw-semibold form-field-lbl">HOW DID YOU HEAR ABOUT US? (OPTIONAL)</label>
+                    <input type="text" class="form-control form-field-input" id="referralSource" name="referralSource" placeholder="e.g. Instagram, Referral, Previous Client, Press Feature...">
+                  </div>
+                </div>
+              </div>
+
+              <hr class="form-section-divider my-0">
+
+              <!-- ==========================================
+                   SECTION 05: ADDITIONAL INFORMATION (05 / 05)
+                   ========================================== -->
+              <div class="form-step-block py-5" data-aos="fade-up">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="form-step-title font-serif fs-4 mb-0">Section 05 &mdash; Additional Information</h3>
+                  <span class="form-step-counter text-uppercase fw-semibold">05 / 05</span>
+                </div>
+
+                <div class="row g-4 mb-4">
+                  <!-- Additional Notes or Specific Questions -->
+                  <div class="col-12">
+                    <label for="additionalNotes" class="form-label text-uppercase fw-semibold form-field-lbl">ADDITIONAL NOTES OR SPECIFIC QUESTIONS (OPTIONAL)</label>
+                    <textarea class="form-control form-field-textarea" id="additionalNotes" name="additionalNotes" rows="3" placeholder="Share any reference moodboards, specific deadlines, or questions you have for us..."></textarea>
+                  </div>
+                </div>
+
+                <!-- Terms & Booking Consent Checkbox -->
+                <div class="form-check custom-checkbox-wrap mb-4">
+                  <input class="form-check-input" type="checkbox" id="bookingConsent" required>
+                  <label class="form-check-label text-muted" for="bookingConsent">
+                    I understand that submitting this inquiry does not guarantee a booking until a deposit is received and confirmed.
+                  </label>
+                </div>
+
+                <!-- Submit Button & SLA Promise -->
+                <div class="pt-2">
+                  <button type="submit" class="btn btn-submit-spec text-uppercase fw-semibold px-5 py-3 mb-3">
+                    <span>SUBMIT INQUIRY</span>
+                    <span class="ms-2" aria-hidden="true">&rarr;</span>
+                  </button>
+                  <p class="spec-sla-note text-muted mb-0">
+                    We review every submission carefully and respond within 24&ndash;48 hours with our availability and a proposed next step.
+                  </p>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 3: PROCESS & PRODUCTION ROADMAP
+         "From first brief to confirmed production."
+         3 Columns: 01 The Review, 02 The Conversation, 03 The Proposal
+         Lead Time Note at bottom
+         =================================================================== -->
+    <section class="py-5" id="how-it-works">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12 col-lg-8">
+            <span class="process-kicker d-block text-uppercase fw-semibold mb-2">HOW IT WORKS</span>
+            <h2 class="process-title font-serif display-4 mb-0">
+              From first brief to confirmed production.
+            </h2>
+          </div>
+        </div>
+
+        <!-- 3 Columns -->
+        <div class="row g-4 g-lg-5 mb-5">
+          
+          <!-- Column 01: The Review -->
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-step-item">
+              <span class="process-num d-block font-serif mb-2">01</span>
+              <h3 class="process-step-name font-serif fs-4 mb-3">The Review</h3>
+              <p class="process-step-desc text-muted mb-0">
+                We evaluate your concept, requirements, and timing to determine whether we are the right studio for your project, our current availability, and the initial production scope.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 02: The Conversation -->
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-step-item">
+              <span class="process-num d-block font-serif mb-2">02</span>
+              <h3 class="process-step-name font-serif fs-4 mb-3">The Conversation</h3>
+              <p class="process-step-desc text-muted mb-0">
+                A 30-minute video or phone consultation to walk through the creative brief, explore reference directions, discuss specific production needs, and establish budget parameters.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 03: The Proposal -->
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-step-item">
+              <span class="process-num d-block font-serif mb-2">03</span>
+              <h3 class="process-step-name font-serif fs-4 mb-3">The Proposal</h3>
+              <p class="process-step-desc text-muted mb-0">
+                You receive a detailed creative proposal outlining shoot structure, shot list, crew requirements, post-production timeline, licensing rights, and an exact production cost estimate.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Typical Lead Time Banner -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-12">
+            <div class="lead-time-box py-3 border-top border-bottom">
+              <span class="lead-time-txt text-uppercase fw-semibold">
+                TYPICAL LEAD TIME: 2&ndash;4 WEEKS FOR EDITORIAL &middot; 4&ndash;8 WEEKS FOR COMMERCIAL &amp; ADVERTISING
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 4: EARLY DISCUSSIONS & CREATIVE GUIDANCE
+         Left: "Not everything needs to be figured out yet." + Approach Link
+         Right: 3 Guidance Items (Moodboard, Existing Concept, Tight Timeline)
+         =================================================================== -->
+    <section class="py-5" id="early-discussions">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-start">
+          
+          <!-- Left Column -->
+          <div class="col-12 col-lg-5 pe-lg-4" data-aos="fade-up">
+            <span class="early-kicker d-block text-uppercase fw-semibold mb-2">EARLY DISCUSSIONS</span>
+            <h2 class="early-title font-serif display-4 mb-4">
+              Not everything<br>
+              needs to be<br>
+              figured out yet.
+            </h2>
+            <p class="early-desc text-muted mb-4">
+              If you are in early-stage development and don&rsquo;t have all the details yet, that&rsquo;s completely fine. We often help clients define the visual approach and scope from the ground up.
+            </p>
+            <a href="about.html" class="early-approach-link text-uppercase fw-semibold">
+              <span>READ ABOUT OUR APPROACH</span>
+              <span class="ms-1" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Right Column (3 Items) -->
+          <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <div class="guidance-list">
+              
+              <!-- Item 1 -->
+              <div class="guidance-item border-bottom pb-4 mb-4">
+                <h3 class="guidance-item-title font-serif fs-4 mb-2">
+                  I only have a moodboard or rough idea.
+                </h3>
+                <p class="guidance-item-desc text-muted mb-0">
+                  You don&rsquo;t need a comprehensive brief to get started. We often shape concepts and creative direction collaboratively with clients before locking in production scope.
+                </p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="guidance-item border-bottom pb-4 mb-4">
+                <h3 class="guidance-item-title font-serif fs-4 mb-2">
+                  We have a concept already and need someone to execute it.
+                </h3>
+                <p class="guidance-item-desc text-muted mb-0">
+                  Perfect. If your creative team has established the visual direction, we step in to execute it with technical precision, bespoke lighting design, and meticulous set execution.
+                </p>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="guidance-item pb-2">
+                <h3 class="guidance-item-title font-serif fs-4 mb-2">
+                  What if my timeline is very tight or last minute?
+                </h3>
+                <p class="guidance-item-desc text-muted mb-0">
+                  Depending on our current production schedule and studio availability, we occasionally accommodate expedited shoots. Please note urgent timing in the form above and we will see what is possible.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 5: DIRECT CONVERSATION
+         "Prefer a simple conversation?"
+         Two direct CTA buttons: Email & Phone / WhatsApp
+         =================================================================== -->
+    <section class="py-5" id="direct-conversation">
+      <div class="container">
+        <div class="row" data-aos="fade-up">
+          <div class="col-12 col-lg-8">
+            <span class="direct-kicker d-block text-uppercase fw-semibold mb-2">DIRECT CONTACT</span>
+            <h2 class="direct-title font-serif display-4 mb-3">
+              Prefer a simple conversation?
+            </h2>
+            <p class="direct-desc text-muted mb-4 max-w-640">
+              If you prefer to start with a casual chat or have questions before filling out a detailed inquiry, reach out directly. We are always happy to discuss ideas and potential collaborations.
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row flex-wrap align-items-stretch align-items-sm-center gap-3 pt-1">
+              <a href="mailto:studio@stackly.com" class="btn btn-direct-pill text-uppercase fw-semibold px-4 py-3">
+                <span>EMAIL DIRECTLY &mdash; STUDIO@STACKLY.COM</span>
+              </a>
+              <a href="tel:+493089204410" class="btn btn-direct-outline text-uppercase fw-semibold px-4 py-3">
+                <span>PHONE / WHATSAPP: +49 (0)30 8920 4410</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 6: DARK PRE-FOOTER BANNER
+         Widescreen Studio Atmosphere + Bold Serif Statement:
+         "Thoughtful work begins with thoughtful collaboration."
+         =================================================================== -->
+    <section class="position-relative overflow-hidden text-white py-5" id="bookaslot-banner">
+      <!-- Background Image with Gradient Overlay -->
+      <div class="bookaslot-banner-bg position-absolute top-0 start-0 w-100 h-100">
+        <img src="assets/images/img_101.webp" alt="Atmospheric studio lighting set" class="w-100 h-100 object-fit-cover" width="1110" height="654">
+        <div class="bookaslot-banner-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+      </div>
+
+      <div class="container position-relative z-1 py-4 py-lg-5">
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8" data-aos="fade-up">
+            <h2 class="bookaslot-banner-title font-serif display-3 mb-0 text-white">
+              Thoughtful work<br>
+              begins with<br>
+              thoughtful<br>
+              collaboration.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (Reusable Component)
+       Loaded dynamically via main.js from footer.html
+       =================================================================== -->
+  <div id="site-footer"></div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Swiper 11 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Main Interactive JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

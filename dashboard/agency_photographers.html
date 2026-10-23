@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talent &amp; Crew Roster &mdash; Stackly Portal</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard-theme.css" />
+</head>
+<body class="dash-page p-3 p-md-4">
+
+  <!-- Header -->
+  <header class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
+    <div>
+      <span class="dash-kicker">TALENT REPRESENTATION &amp; ROSTER</span>
+      <h1 class="dash-title">Represented Artists &amp; Crew</h1>
+      <p class="dash-subtitle">Manage exclusive photographer agency representations, negotiated day-rate schedules, and production technical crew rosters.</p>
+    </div>
+    <div>
+      <button class="btn btn-dash btn-dash-dark" onclick="alert('Artist onboarding contract generator opened.');">
+        <i class="fa-solid fa-user-plus"></i> <span>Sign New Artist</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3 Talent Overview Metrics -->
+  <div class="row g-3 g-xl-4 mb-4">
+    <div class="col-12 col-sm-4">
+      <div class="dash-card dash-stat-card">
+        <span class="dash-stat-label">Exclusively Represented</span>
+        <div>
+          <div class="dash-stat-value">14 <span class="fs-6 text-muted">Photographers</span></div>
+          <div class="dash-stat-trend up"><i class="fa-solid fa-certificate text-gold"></i> Tier 1 Global Master Roster</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4">
+      <div class="dash-card dash-stat-card">
+        <span class="dash-stat-label">Production Crew Members</span>
+        <div>
+          <div class="dash-stat-value">28 <span class="fs-6 text-muted">Specialists</span></div>
+          <div class="dash-stat-trend up"><i class="fa-solid fa-bolt"></i> Lighting, Digital Techs, HMUA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4">
+      <div class="dash-card dash-stat-card">
+        <span class="dash-stat-label">Quarterly Utilization</span>
+        <div>
+          <div class="dash-stat-value">88.4%</div>
+          <div class="dash-stat-trend up"><i class="fa-solid fa-calendar-check text-success"></i> Highly active bookings</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Represented Artists Cards -->
+  <div class="mb-4">
+    <h2 class="h5 mb-3 fw-semibold">Represented Master Photographers</h2>
+    
+    <div class="row g-3 g-xl-4">
+      
+      <!-- Artist 1 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <div class="dash-card overflow-hidden h-100 d-flex flex-column">
+          <div class="dash-gallery-card" style="aspect-ratio: 1/1;">
+            <img src="../assets/images/img_05.webp" alt="Julian Thorne Profile" class="dash-gallery-img">
+            <div class="dash-gallery-overlay">
+              <span class="badge badge-dash badge-dash-gold">RESIDENT LEAD</span>
+              <div class="text-white">
+                <div class="fw-bold fs-6">Julian Thorne</div>
+                <div class="small opacity-75">Berlin &bull; Fashion &amp; Architecture</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white flex-grow-1 d-flex flex-column justify-content-between small">
+            <div>
+              <div class="d-flex justify-content-between mb-1">
+                <span class="text-muted">Commercial Day:</span>
+                <span class="fw-bold">$3,200</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Editorial Day:</span>
+                <span class="fw-bold">$1,800</span>
+              </div>
+              <div class="mb-2">
+                <span class="badge badge-dash badge-dash-confirmed">In Studio 1</span>
+              </div>
+            </div>
+            <button class="btn btn-dash btn-dash-outline btn-dash-sm w-100" onclick="alert('Viewing Julian Thorne artist ledger.');">
+              Manage Roster
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artist 2 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <div class="dash-card overflow-hidden h-100 d-flex flex-column">
+          <div class="dash-gallery-card" style="aspect-ratio: 1/1;">
+            <img src="../assets/images/img_10.webp" alt="Claire Delacroix Profile" class="dash-gallery-img">
+            <div class="dash-gallery-overlay">
+              <span class="badge badge-dash badge-dash-dark">PARIS LEAD</span>
+              <div class="text-white">
+                <div class="fw-bold fs-6">Claire Delacroix</div>
+                <div class="small opacity-75">Paris &bull; Haute Horology &amp; Luxury</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white flex-grow-1 d-flex flex-column justify-content-between small">
+            <div>
+              <div class="d-flex justify-content-between mb-1">
+                <span class="text-muted">Commercial Day:</span>
+                <span class="fw-bold">$3,500</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Editorial Day:</span>
+                <span class="fw-bold">$2,000</span>
+              </div>
+              <div class="mb-2">
+                <span class="badge badge-dash badge-dash-confirmed">On Location (Paris)</span>
+              </div>
+            </div>
+            <button class="btn btn-dash btn-dash-outline btn-dash-sm w-100" onclick="alert('Viewing Claire Delacroix artist ledger.');">
+              Manage Roster
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artist 3 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <div class="dash-card overflow-hidden h-100 d-flex flex-column">
+          <div class="dash-gallery-card" style="aspect-ratio: 1/1;">
+            <img src="../assets/images/img_16.webp" alt="Marcus Lindqvist Profile" class="dash-gallery-img">
+            <div class="dash-gallery-overlay">
+              <span class="badge badge-dash badge-dash-dark">NORDIC LEAD</span>
+              <div class="text-white">
+                <div class="fw-bold fs-6">Marcus Lindqvist</div>
+                <div class="small opacity-75">Copenhagen &bull; Interior &amp; Daylight</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white flex-grow-1 d-flex flex-column justify-content-between small">
+            <div>
+              <div class="d-flex justify-content-between mb-1">
+                <span class="text-muted">Commercial Day:</span>
+                <span class="fw-bold">$2,800</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Editorial Day:</span>
+                <span class="fw-bold">$1,600</span>
+              </div>
+              <div class="mb-2">
+                <span class="badge badge-dash badge-dash-confirmed">Available</span>
+              </div>
+            </div>
+            <button class="btn btn-dash btn-dash-outline btn-dash-sm w-100" onclick="alert('Viewing Marcus Lindqvist artist ledger.');">
+              Manage Roster
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artist 4 -->
+      <div class="col-12 col-sm-6 col-xl-3">
+        <div class="dash-card overflow-hidden h-100 d-flex flex-column">
+          <div class="dash-gallery-card" style="aspect-ratio: 1/1;">
+            <img src="../assets/images/img_28.webp" alt="Hélène Moreau Profile" class="dash-gallery-img">
+            <div class="dash-gallery-overlay">
+              <span class="badge badge-dash badge-dash-gold">MILAN LEAD</span>
+              <div class="text-white">
+                <div class="fw-bold fs-6">Hélène Moreau</div>
+                <div class="small opacity-75">Milan &bull; Runway &amp; Film Grain</div>
+              </div>
+            </div>
+          </div>
+          <div class="p-3 bg-white flex-grow-1 d-flex flex-column justify-content-between small">
+            <div>
+              <div class="d-flex justify-content-between mb-1">
+                <span class="text-muted">Commercial Day:</span>
+                <span class="fw-bold">$3,000</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Editorial Day:</span>
+                <span class="fw-bold">$1,750</span>
+              </div>
+              <div class="mb-2">
+                <span class="badge badge-dash badge-dash-review">Booked (Bottega)</span>
+              </div>
+            </div>
+            <button class="btn btn-dash btn-dash-outline btn-dash-sm w-100" onclick="alert('Viewing Hélène Moreau artist ledger.');">
+              Manage Roster
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Technical Crew & Gaffer Roster Table -->
+  <div class="dash-card p-3 p-md-4">
+    <h2 class="h5 mb-3 fw-semibold">On-Set Crew &amp; Technical Specialists</h2>
+
+    <div class="table-responsive">
+      <table class="dash-table align-middle">
+        <thead>
+          <tr>
+            <th>Crew Member</th>
+            <th>Role Specialty</th>
+            <th>Location Base</th>
+            <th>Day Rate</th>
+            <th>Assigned Production</th>
+            <th>Status</th>
+            <th class="text-end">Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="fw-bold">Hannah Schmidt</div>
+              <span class="small text-muted">First Assistant &bull; Broncolor Specialist</span>
+            </td>
+            <td>Gaffer / Lighting Lead</td>
+            <td>Berlin Kreuzberg</td>
+            <td>$650 / day</td>
+            <td>Vogue Berlin Autumn Lookbook</td>
+            <td><span class="badge badge-dash badge-dash-confirmed">On Set</span></td>
+            <td class="text-end">
+              <button class="btn btn-dash btn-dash-outline btn-dash-sm" onclick="alert('Direct WhatsApp dispatch opened for Hannah Schmidt.');">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="fw-bold">Marc Weber</div>
+              <span class="small text-muted">Capture One Certified Digital Tech</span>
+            </td>
+            <td>DIT &bull; Tether Station Lead</td>
+            <td>Berlin Kreuzberg</td>
+            <td>$750 / day</td>
+            <td>Bottega Veneta Cyclorama</td>
+            <td><span class="badge badge-dash badge-dash-gold">Assigned</span></td>
+            <td class="text-end">
+              <button class="btn btn-dash btn-dash-outline btn-dash-sm" onclick="alert('Direct WhatsApp dispatch opened for Marc Weber.');">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="fw-bold">Elena Rostova</div>
+              <span class="small text-muted">Editorial Wardrobe &amp; Still Life Props</span>
+            </td>
+            <td>Wardrobe Stylist</td>
+            <td>Paris &bull; Berlin</td>
+            <td>$900 / day</td>
+            <td>Hermès Commercial Shoot</td>
+            <td><span class="badge badge-dash badge-dash-confirmed">Pre-Production</span></td>
+            <td class="text-end">
+              <button class="btn btn-dash btn-dash-outline btn-dash-sm" onclick="alert('Direct WhatsApp dispatch opened for Elena Rostova.');">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preferences &amp; Style &mdash; Stackly Portal</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 & FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard-theme.css" />
+</head>
+<body class="dash-page p-3 p-md-4">
+
+  <!-- Header -->
+  <header class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
+    <div>
+      <span class="dash-kicker">ATELIER CONFIGURATION</span>
+      <h1 class="dash-title">Client Preferences &amp; Style</h1>
+      <p class="dash-subtitle">Manage your brand aesthetic specs, delivery color profiles, production contacts, and security credentials.</p>
+    </div>
+    <div>
+      <button class="btn btn-dash btn-dash-dark" onclick="alert('Client aesthetic preferences saved successfully.');">
+        <i class="fa-solid fa-floppy-disk"></i> <span>Save Changes</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="row g-4">
+    
+    <!-- Left Column: Profile Details & Brand -->
+    <div class="col-12 col-lg-7">
+      
+      <!-- Primary Contact Card -->
+      <div class="dash-card p-3 p-md-4 mb-4">
+        <h2 class="h5 mb-3 fw-semibold">Patron Details</h2>
+        
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <label for="clientName" class="dash-form-label">FULL NAME</label>
+            <input type="text" id="clientName" class="form-control dash-input" value="Eleanor Vance">
+          </div>
+          <div class="col-12 col-sm-6">
+            <label for="clientPublication" class="dash-form-label">BRAND / PUBLICATION</label>
+            <input type="text" id="clientPublication" class="form-control dash-input" value="Atelier Vogue Berlin">
+          </div>
+          <div class="col-12 col-sm-6">
+            <label for="clientEmail" class="dash-form-label">CONTACT EMAIL</label>
+            <input type="email" id="clientEmail" class="form-control dash-input" value="eleanor@stacklystudio.com">
+          </div>
+          <div class="col-12 col-sm-6">
+            <label for="clientPhone" class="dash-form-label">PHONE NUMBER</label>
+            <input type="text" id="clientPhone" class="form-control dash-input" value="+49 30 8920 4110">
+          </div>
+          <div class="col-12">
+            <label for="clientAddress" class="dash-form-label">REGISTERED ATELIER ADDRESS</label>
+            <input type="text" id="clientAddress" class="form-control dash-input" value="Prinzenstraße 85, 10969 Berlin, Germany">
+          </div>
+        </div>
+      </div>
+
+      <!-- Aesthetic & Technical Preferences -->
+      <div class="dash-card p-3 p-md-4 mb-4">
+        <h2 class="h5 mb-3 fw-semibold">Production &amp; Aesthetic Specs</h2>
+        <p class="small text-muted mb-3">Our lead photographers reference these specifications when preparing lighting rigs and color grading passes.</p>
+
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <label for="filmProfile" class="dash-form-label">ANALOG GRAIN EMULATION</label>
+            <select id="filmProfile" class="form-select dash-select">
+              <option selected>Kodak Portra 400 (Subtle Grain)</option>
+              <option>Fuji Pro 400H (Cool Pastel Greens)</option>
+              <option>Ilford HP5 Plus (High Contrast B&amp;W)</option>
+              <option>Zero Grain (Clinical Digital Ultra-Sharp)</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <label for="colorSpace" class="dash-form-label">DELIVERY COLOR SPACE</label>
+            <select id="colorSpace" class="form-select dash-select">
+              <option selected>Adobe RGB (1998) &bull; Editorial Print Standard</option>
+              <option>ProPhoto RGB &bull; Maximum Gamut 16-bit</option>
+              <option>sRGB IEC61966 &bull; Web &amp; Social Optimized</option>
+              <option>Display P3 &bull; Apple Retina Standard</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="dash-form-label d-block">EDITORIAL AESTHETIC TAGS</label>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge badge-dash badge-dash-gold">High Contrast</span>
+              <span class="badge badge-dash badge-dash-gold">Sculpted Shadows</span>
+              <span class="badge badge-dash badge-dash-dark">Natural Skylight</span>
+              <span class="badge badge-dash badge-dash-dark">Linen Backdrops</span>
+              <span class="badge badge-dash badge-dash-dark">Muted Earth Tones</span>
+              <span class="badge badge-dash badge-dash-gold">Brutalist Composition</span>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="specialNotes" class="dash-form-label">SPECIAL LIGHTING &amp; SET REQUESTS</label>
+            <textarea id="specialNotes" class="form-control dash-textarea" rows="3" placeholder="Additional notes for your dedicated studio lead...">Prefers warm ivory cycloramas over clinical pure white. No heavy beauty-retouch skin softening; preserve organic skin texture and micro-contrasts.</textarea>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Notifications & Security -->
+    <div class="col-12 col-lg-5">
+      
+      <!-- Notification Preferences -->
+      <div class="dash-card p-3 p-md-4 mb-4">
+        <h2 class="h5 mb-3 fw-semibold">Dispatch Alerts</h2>
+        
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="notifProofs" checked>
+          <label class="form-check-label small fw-semibold" for="notifProofs">
+            New Contact Sheets &amp; Proofs
+          </label>
+          <div class="text-muted" style="font-size: 0.74rem;">Instant email alert when new shoot frames are ingested and watermarked.</div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="notifCallSheet" checked>
+          <label class="form-check-label small fw-semibold" for="notifCallSheet">
+            Call Sheet Amendments
+          </label>
+          <div class="text-muted" style="font-size: 0.74rem;">Alerts regarding studio crew call time changes, weather backups, or talent rosters.</div>
+        </div>
+
+        <div class="form-check mb-0">
+          <input class="form-check-input" type="checkbox" id="notifBilling" checked>
+          <label class="form-check-label small fw-semibold" for="notifBilling">
+            Milestone Billing Receipts
+          </label>
+          <div class="text-muted" style="font-size: 0.74rem;">Automated PDF receipts and balance statements for your accounting team.</div>
+        </div>
+      </div>
+
+      <!-- Security & Password -->
+      <div class="dash-card p-3 p-md-4">
+        <h2 class="h5 mb-3 fw-semibold">Security Credentials</h2>
+        
+        <div class="mb-3">
+          <label for="currPassword" class="dash-form-label">CURRENT PASSWORD</label>
+          <input type="password" id="currPassword" class="form-control dash-input" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+        </div>
+
+        <div class="mb-3">
+          <label for="newPassword" class="dash-form-label">NEW PASSWORD</label>
+          <input type="password" id="newPassword" class="form-control dash-input" placeholder="Create new strong password">
+        </div>
+
+        <button class="btn btn-dash btn-dash-outline btn-dash-sm w-100" onclick="alert('Password update request confirmed.');">
+          <i class="fa-solid fa-key"></i> Update Password
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login &mdash; Stackly Photography Portfolio</title>
+  <meta name="description" content="Sign in to your Stackly photography portal to manage editorial assignments, commercial commissions, and portfolio enquiries.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23121214'/><text x='16' y='22' font-family='serif' font-size='18' font-style='italic' fill='%23c6a87d' text-anchor='middle'>S</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Master Theme Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="auth-page-body">
+
+  <main class="auth-wrapper min-vh-100 d-flex flex-column flex-md-row">
+
+    <!-- Left Visual Panel (Full height side panel on desktop/tablet, responsive banner on mobile) -->
+    <div class="auth-visual auth-visual-login col-12 col-md-5 col-lg-6">
+      <div class="auth-visual-sticky">
+        <img src="assets/images/login.webp" alt="Stackly Studio I Berlin Set - draped backdrop and wooden stool" class="auth-visual-img" width="737" height="1106">
+        <div class="auth-visual-overlay"></div>
+        
+        <div class="auth-visual-caption">
+          <span class="auth-caption-kicker d-block text-uppercase mb-2">STACKLY</span>
+          <h2 class="auth-caption-headline font-serif fst-italic mb-0">Stories worth remembering.</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Form Panel -->
+    <div class="auth-form-panel col-12 col-md-7 col-lg-6 d-flex flex-column justify-content-between">
+      
+      <!-- Top Navigation -->
+      <header class="auth-top-nav d-flex justify-content-between align-items-center mb-4 mb-lg-5">
+        <a href="index.html" class="auth-logo-link" aria-label="Stackly Home">
+          <img src="assets/images/logoStackly-dark.webp" alt="Stackly" class="auth-logo" width="120" height="40">
+        </a>
+        <a href="index.html" class="auth-back-link text-uppercase fw-semibold">
+          <span class="me-1" aria-hidden="true">&larr;</span> BACK TO WEBSITE
+        </a>
+      </header>
+
+      <!-- Center Form Card -->
+      <div class="auth-form-card mx-auto my-auto py-2 py-lg-4">
+        
+        <div class="auth-form-header mb-4">
+          <span class="auth-kicker d-block text-uppercase fw-semibold mb-2">WELCOME BACK</span>
+          <h1 class="auth-heading font-serif mb-2">Good to see you again.</h1>
+          <p class="auth-subtext mb-0">
+            Sign in to access your account and manage your photography enquiries.
+          </p>
+        </div>
+
+        <form id="loginForm" novalidate>
+
+          <!-- 3 Photography Theme Roles -->
+          <div class="auth-role-wrapper mb-4">
+            <label class="form-label auth-label text-uppercase mb-2">SELECT ROLE *</label>
+            <div class="row g-2 auth-role-grid" role="radiogroup" aria-label="Select Account Role">
+              <div class="col-4">
+                <input type="radio" class="btn-check" name="loginRole" id="loginRoleClient" value="Client" checked>
+                <label class="auth-role-card w-100" for="loginRoleClient">
+                  <i class="fa-regular fa-building auth-role-icon" aria-hidden="true"></i>
+                  <span class="auth-role-name">Client</span>
+                </label>
+              </div>
+              <div class="col-4">
+                <input type="radio" class="btn-check" name="loginRole" id="loginRolePhotographer" value="Photographer">
+                <label class="auth-role-card w-100" for="loginRolePhotographer">
+                  <i class="fa-solid fa-camera auth-role-icon" aria-hidden="true"></i>
+                  <span class="auth-role-name">Photographer</span>
+                </label>
+              </div>
+              <div class="col-4">
+                <input type="radio" class="btn-check" name="loginRole" id="loginRoleAgency" value="Agency">
+                <label class="auth-role-card w-100" for="loginRoleAgency">
+                  <i class="fa-solid fa-compass-drafting auth-role-icon" aria-hidden="true"></i>
+                  <span class="auth-role-name">Agency</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label auth-label text-uppercase">EMAIL ADDRESS</label>
+            <div class="auth-input-wrap">
+              <input type="email" class="form-control auth-input" id="loginEmail" placeholder="you@example.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <!-- Password with Toggle -->
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label auth-label text-uppercase">PASSWORD</label>
+            <div class="auth-input-wrap position-relative">
+              <input type="password" class="form-control auth-input pe-5" id="loginPassword" placeholder="Enter your password" required autocomplete="current-password">
+              <button type="button" class="btn auth-pw-toggle toggle-password" aria-label="Toggle password visibility">
+                <i class="fa-regular fa-eye" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Remember me & Forgot Password -->
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+            <div class="form-check auth-checkbox">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <a href="contact.html#contact-inquiry" class="auth-forgot-link">Forgot password?</a>
+          </div>
+
+          <!-- Sign In Submit Button -->
+          <button type="submit" class="btn btn-auth-submit w-100 text-uppercase fw-semibold mb-4" id="loginBtn">
+            <span>SIGN IN</span>
+            <span class="ms-2" aria-hidden="true">&rarr;</span>
+          </button>
+
+          <!-- Alternative Action -->
+          <div class="text-center auth-alt-action mb-4">
+            <span class="d-block text-muted small mb-1">New to Stackly?</span>
+            <a href="register.html" class="auth-action-link text-uppercase fw-bold">
+              <span>CREATE AN ACCOUNT</span>
+              <span class="ms-1" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <p class="auth-disclaimer text-center mb-0">
+            Your account information should always remain private and secure.
+          </p>
+
+        </form>
+
+      </div>
+
+      <!-- Right Panel Bottom Footer -->
+      <footer class="auth-panel-footer pt-4 mt-auto d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <nav class="auth-footer-nav d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start gap-2 gap-sm-3" aria-label="Auth page secondary links">
+          <a href="index.html" class="auth-footer-link">HOME</a>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <a href="portfolio.html" class="auth-footer-link">PORTFOLIO</a>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <a href="contact.html" class="auth-footer-link">CONTACT</a>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <a href="journal.html" class="auth-footer-link">PRIVACY POLICY</a>
+        </nav>
+        <div class="auth-footer-copy text-uppercase text-center text-sm-end">
+          &copy; 2025 STACKLY. ALL RIGHTS RESERVED.
+        </div>
+      </footer>
+
+    </div>
+
+  </main>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Dedicated Authentication Handler (Local Storage Session & Validation) -->
+  <script src="assets/js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Portfolio &mdash; Stories told through images | STACKLY</title>
+  <meta name="description" content="A collection of campaigns, portraits and visual stories created for people, brands and places with uncompromising discipline.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23111'/><circle cx='16' cy='16' r='6' fill='%23c6a87d'/></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper 11 CSS for Marquee Tickers -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Reusable Component)
+       Loaded dynamically via main.js from header.html
+       =================================================================== -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ===================================================================
+         PORTFOLIO SECTION 1: HERO / INTRO
+         Exact match of reference design
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-intro">
+      <div class="container">
+
+        <!-- Top Header Row: Kicker, Heading and Paragraph -->
+        <div class="row align-items-end justify-content-between g-4 mb-4 mb-lg-5">
+          <!-- Left: Eyebrow Kicker & Main Headline -->
+          <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-duration="700">
+            <span class="portfolio-hero-kicker d-block text-uppercase fw-semibold mb-2">PORTFOLIO</span>
+            <h1 class="portfolio-hero-heading font-serif mb-0">
+              Stories told through images.
+            </h1>
+          </div>
+
+          <!-- Right: Editorial Introductory Statement -->
+          <div class="col-12 col-lg-5 col-xl-4 text-start text-lg-start ms-lg-auto" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <p class="portfolio-hero-desc mb-0">
+              A collection of campaigns, portraits and visual stories created for people, brands and places with uncompromising discipline.
+            </p>
+          </div>
+        </div>
+
+        <!-- Featured Large Visual Banner with Bottom-Left Campaign Badge -->
+        <div class="portfolio-hero-frame position-relative overflow-hidden" data-aos="fade-up" data-aos-duration="850" data-aos-delay="150">
+          <img src="assets/images/img_16.webp" alt="Solitude &amp; Form &mdash; Autumn Solstice, Milan / Paris" class="img-fluid w-100 portfolio-hero-img" loading="eager">
+
+          <!-- On-Image Campaign Badge (Bottom Left) -->
+          <div class="portfolio-hero-badge position-absolute">
+            <span class="portfolio-badge-kicker d-block text-uppercase fw-semibold mb-1">CAMPAIGN 01</span>
+            <div class="d-flex flex-column flex-sm-row align-items-sm-baseline justify-content-between gap-2 gap-sm-4">
+              <h2 class="portfolio-badge-title font-serif mb-0">
+                Solitude &amp; Form &mdash; Autumn Solstice
+              </h2>
+              <span class="portfolio-badge-meta text-uppercase">
+                MILAN / PARIS
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PORTFOLIO SECTION 2: WORK FILTER TABS & FEATURED SPOTLIGHT SHOWCASE
+         Exact match of reference design
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-spotlight">
+      <div class="container">
+
+        <!-- Filter Navigation Tabs Bar -->
+        <div class="portfolio-filter-bar mb-5 pt-3" data-aos="fade-up" data-aos-duration="600">
+          <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <!-- Filter Pills / Tabs Row -->
+            <ul class="nav portfolio-nav-tabs d-flex flex-nowrap align-items-center gap-3 gap-md-4 mb-0 list-unstyled overflow-x-auto pb-2 pb-md-0">
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link active text-uppercase" data-filter="all">ALL WORK</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="commercial">COMMERCIAL</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="editorial">EDITORIAL</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="fashion">FASHION</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="portraits">PORTRAITS</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="lifestyle">LIFESTYLE</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="product">PRODUCT</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="travel">TRAVEL</a>
+              </li>
+              <li class="nav-item flex-shrink-0">
+                <a href="#portfolio-spotlight" class="portfolio-tab-link text-uppercase" data-filter="events">EVENTS</a>
+              </li>
+            </ul>
+
+            <!-- Right: Commissions Counter -->
+            <div class="commissions-count text-uppercase flex-shrink-0 text-start text-md-end">
+              12 COMMISSIONS
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Spotlight Project Showcase: 2-Column Grid -->
+        <div class="row g-4 g-xl-5 align-items-center">
+          <!-- Left Column: Spotlight Image with On-Image Badge -->
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="800">
+            <div class="spotlight-img-frame position-relative overflow-hidden">
+              <img src="assets/images/img_17.webp" alt="Winter Collection &mdash; Fashion Editorial for Maison Margaux" class="img-fluid w-100 spotlight-img" loading="lazy">
+              <!-- On-Image Badge (Top Left) -->
+              <div class="spotlight-badge position-absolute">
+                <span>FEATURED SPOTLIGHT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Project Editorial Narrative & Metadata -->
+          <div class="col-12 col-lg-6 ps-lg-4 ps-xl-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <!-- Eyebrow Kicker with Year -->
+            <div class="spotlight-kicker text-uppercase fw-semibold mb-2">
+              FASHION EDITORIAL &nbsp;&bull;&nbsp; 2025
+            </div>
+
+            <!-- Main Heading Title -->
+            <h2 class="spotlight-title font-serif mb-3">
+              Winter Collection
+            </h2>
+
+            <!-- Client Metadata -->
+            <div class="spotlight-client text-uppercase fw-semibold mb-4">
+              CLIENT: MAISON MARGAUX
+            </div>
+
+            <!-- In-Depth Descriptive Paragraph -->
+            <p class="spotlight-desc mb-4 mb-lg-5">
+              Capturing tectonic drape, wool textures, and subdued Nordic atmospheric lighting. Conceived as a study on silhouette and natural resilience in coastal sub-zero elements.
+            </p>
+
+            <!-- Bottom Metadata & View Action Link -->
+            <div class="spotlight-meta-action d-flex align-items-end justify-content-between pt-3">
+              <div>
+                <span class="spotlight-meta-label d-block text-uppercase fw-semibold mb-1">MEDIUM</span>
+                <span class="spotlight-meta-val">35mm &amp; Medium Format Film</span>
+              </div>
+              <div>
+                <a href="#contact" class="spotlight-view-link text-uppercase fw-bold text-decoration-none">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: COMPLETE BODY OF WORK (12 COMMISSIONS GRID)
+         Index showcase of 12 curated photography commissions across
+         Commercial, Editorial, Fashion, Portraits, Lifestyle, Product,
+         Travel & Events, featuring even-sized frames and responsive grid.
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-works">
+      <div class="container">
+
+        <!-- Section Header: Left Index & Title, Right Curated Archive Range -->
+        <div class="row align-items-end justify-content-between mb-4 mb-lg-5 g-3">
+          <div class="col-12 col-md-8" data-aos="fade-up" data-aos-duration="600">
+            <span class="portfolio-section-kicker d-block text-uppercase fw-semibold mb-2">INDEX</span>
+            <h2 class="portfolio-section-title font-serif mb-0">Complete Body of Work</h2>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-end" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <span class="portfolio-archive-meta text-uppercase fw-semibold">CURATED ARCHIVE 2020 &mdash; 2026</span>
+          </div>
+        </div>
+
+        <!-- 12 Commissions Editorial Portfolio Grid (Even-Sized Media Frames) -->
+        <div class="row g-4 g-lg-5" id="portfolio-works-grid">
+
+          <!-- Item 01 / 12 (Row 1, Col 1 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="fashion" data-aos="fade-up" data-aos-duration="700">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_18.webp" alt="Winter Collection &mdash; Fashion Editorial for Maison Margaux" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>01 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Winter Collection</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                FASHION &mdash; MAISON MARGAUX
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 02 / 12 (Row 1, Col 2 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="travel" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_19.webp" alt="The Nordic Escape &mdash; Travel for Vestland Retreats" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>02 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">The Nordic Escape</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                TRAVEL &mdash; VESTLAND RETREATS
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 03 / 12 (Row 2, Col 1 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="product" data-aos="fade-up" data-aos-duration="700">
+            <div class="portfolio-card-frame portfolio-frame-3col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_20.webp" alt="Aroma Collection &mdash; Product for Ona Parfums" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>03 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Aroma Collection</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                PRODUCT &mdash; ONA PARFUMS
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 04 / 12 (Row 2, Col 2 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="portraits" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="portfolio-card-frame portfolio-frame-3col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_21.webp" alt="Studio Portraits &mdash; Portraits for Movement Series" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>04 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Studio Portraits</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                PORTRAITS &mdash; MOVEMENT SERIES
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 05 / 12 (Row 2, Col 3 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="lifestyle" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="portfolio-card-frame portfolio-frame-3col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_22.webp" alt="Everyday Moments &mdash; Lifestyle for Kinfolk Press" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>05 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Everyday Moments</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                LIFESTYLE &mdash; KINFOLK PRESS
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 06 / 12 (Row 3, Col 1 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="editorial" data-aos="fade-up" data-aos-duration="700">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_23.webp" alt="City After Dark &mdash; Editorial for Dust Magazine" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>06 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">City After Dark</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                EDITORIAL &mdash; DUST MAGAZINE
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 07 / 12 (Row 3, Col 2 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="commercial" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_24.webp" alt="The Summer Campaign &mdash; Commercial for Aurelia Resort" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>07 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">The Summer Campaign</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                COMMERCIAL &mdash; AURELIA RESORT
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 08 / 12 (Row 4, Col 1 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="product" data-aos="fade-up" data-aos-duration="700">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_25.webp" alt="Modern Objects &mdash; Product for Studio Materia" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>08 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Modern Objects</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                PRODUCT &mdash; STUDIO MATERIA
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 09 / 12 (Row 4, Col 2 - 2-Column Even Size) -->
+          <div class="col-12 col-md-6 work-card" data-category="commercial" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="portfolio-card-frame portfolio-frame-2col position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_26.webp" alt="The Art of Craft &mdash; Commercial for Vacheron Horology" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>09 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">The Art of Craft</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                COMMERCIAL &mdash; VACHERON HOROLOGY
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10 / 12 (Row 5, Col 1 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="lifestyle" data-aos="fade-up" data-aos-duration="700">
+            <div class="portfolio-card-frame portfolio-frame-3col-tall position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_27.webp" alt="Quiet Spaces &mdash; Lifestyle &amp; Architecture for Cereal" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>10 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Quiet Spaces</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                LIFESTYLE / ARCHITECTURE &mdash; CEREAL
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 11 / 12 (Row 5, Col 2 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="portraits" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="portfolio-card-frame portfolio-frame-3col-tall position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_28.webp" alt="Faces &amp; Stories &mdash; Portraits for Artisan Essays" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>11 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">Faces &amp; Stories</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                PORTRAITS &mdash; ARTISAN ESSAYS
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12 / 12 (Row 5, Col 3 - 3-Column Even Size) -->
+          <div class="col-12 col-md-4 work-card" data-category="events" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="portfolio-card-frame portfolio-frame-3col-tall position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_29.webp" alt="A Day in Motion &mdash; Events for Paris Fashion Week" class="portfolio-card-img" loading="lazy">
+              <div class="portfolio-card-badge position-absolute">
+                <span>12 / 12</span>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="portfolio-card-title font-serif mb-0">A Day in Motion</h3>
+                <a href="#contact" class="portfolio-card-link text-uppercase text-decoration-none flex-shrink-0">
+                  <span>VIEW PROJECT</span>
+                  <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+              <div class="portfolio-card-meta text-uppercase">
+                EVENTS &mdash; PARIS FASHION WEEK
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: COMMERCIAL HIGHLIGHTS
+         Showcase of commissioned imagery for global brands (COS, Leica, Kinfolk)
+         with even-sized 3:4 portrait media frames, responsive 3-column grid,
+         and dark CTA button.
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-commercial">
+      <div class="container py-lg-3">
+
+        <!-- Section Header: Left Kicker & Headline, Right Editorial Narrative -->
+        <div class="row align-items-end justify-content-between mb-4 mb-lg-5 g-4">
+          <div class="col-12 col-lg-7" data-aos="fade-up" data-aos-duration="600">
+            <span class="commercial-kicker d-block text-uppercase fw-semibold mb-2">COMMERCIAL HIGHLIGHTS</span>
+            <h2 class="commercial-title font-serif mb-0">Commissioned imagery for<br class="d-none d-sm-inline"> global brands.</h2>
+          </div>
+          <div class="col-12 col-lg-5 col-xl-4 text-start text-lg-start" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <p class="commercial-subtitle mb-0 pt-lg-2">
+              Precision execution merging high&ndash;concept artistic storytelling with measurable brand stature. Delivered across global print, digital, and OOH billboards.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3-Column Even-Sized Commercial Showcase Grid -->
+        <div class="row g-4 g-lg-5 mb-5 align-items-stretch">
+
+          <!-- Commercial Item 1: COS -->
+          <div class="col-12 col-md-4 commercial-card" data-aos="fade-up" data-aos-duration="700">
+            <div class="commercial-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_30.webp" alt="Form &amp; Void FW24 &mdash; Global Campaign for COS" class="commercial-img w-100" loading="lazy">
+            </div>
+            <div class="commercial-card-info">
+              <div class="commercial-meta text-uppercase fw-semibold mb-2">
+                GLOBAL CAMPAIGN &mdash; COS
+              </div>
+              <h3 class="commercial-card-title font-serif mb-2">
+                Form &amp; Void FW24
+              </h3>
+              <p class="commercial-card-desc mb-0">
+                Global print catalog and prime city storefront window displays.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commercial Item 2: LEICA -->
+          <div class="col-12 col-md-4 commercial-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="commercial-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_31.webp" alt="The Heritage Lens &mdash; Product Launch for Leica" class="commercial-img w-100" loading="lazy">
+            </div>
+            <div class="commercial-card-info">
+              <div class="commercial-meta text-uppercase fw-semibold mb-2">
+                PRODUCT LAUNCH &mdash; LEICA
+              </div>
+              <h3 class="commercial-card-title font-serif mb-2">
+                The Heritage Lens
+              </h3>
+              <p class="commercial-card-desc mb-0">
+                Worldwide digital rollout and special commemorative hardcover monograph.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commercial Item 3: KINFOLK -->
+          <div class="col-12 col-md-4 commercial-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="commercial-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_32.webp" alt="The Architecture of Silence &mdash; Editorial Cover for Kinfolk" class="commercial-img w-100" loading="lazy">
+            </div>
+            <div class="commercial-card-info">
+              <div class="commercial-meta text-uppercase fw-semibold mb-2">
+                EDITORIAL COVER &mdash; KINFOLK
+              </div>
+              <h3 class="commercial-card-title font-serif mb-2">
+                The Architecture of Silence
+              </h3>
+              <p class="commercial-card-desc mb-0">
+                Cover visual and 16-page centerfold architectural photo essay.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered Bottom CTA Button -->
+        <div class="text-center pt-2 pt-md-3" data-aos="fade-up" data-aos-duration="600">
+          <a href="#contact" class="btn btn-dark commercial-btn-cta rounded-0 text-uppercase fw-bold">
+            <span>EXPLORE COMMERCIAL WORK</span>
+            <span class="btn-arrow ms-2" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: RECENT COMMISSIONS
+         Showcase of latest studio & location work across commercial,
+         product and documentary photography with even-sized 16:10 frames.
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-recent">
+      <div class="container py-lg-3">
+
+        <!-- Section Header: Left Kicker & Headline, Right View All Link -->
+        <div class="row align-items-end justify-content-between mb-4 mb-lg-5 g-3">
+          <div class="col-12 col-md-8" data-aos="fade-up" data-aos-duration="600">
+            <span class="recent-kicker d-block text-uppercase fw-semibold mb-2">RECENT COMMISSIONS</span>
+            <h2 class="recent-title font-serif mb-0">Fresh from the studio &amp; on location.</h2>
+          </div>
+          <div class="col-12 col-md-4 text-start text-md-end" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <a href="#portfolio-works" class="recent-view-all text-uppercase fw-bold text-decoration-none">
+              <span>VIEW ALL WORK</span>
+              <span class="link-arrow ms-1" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3-Column Even-Sized Recent Works Grid -->
+        <div class="row g-4 g-lg-5">
+
+          <!-- Recent Item 1: Polestar Nocturne -->
+          <div class="col-12 col-md-4 recent-card" data-aos="fade-up" data-aos-duration="700">
+            <div class="recent-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_33.webp" alt="Polestar Nocturne &mdash; Commercial Location Reykjavik" class="recent-img w-100" loading="lazy">
+            </div>
+            <div class="recent-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="recent-card-title font-serif mb-0">Polestar Nocturne</h3>
+                <span class="recent-card-date text-uppercase">OCT 2024</span>
+              </div>
+              <div class="recent-card-meta text-uppercase">
+                COMMERCIAL LOCATION / REYKJAVIK
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Item 2: Bespoke Footwear Study -->
+          <div class="col-12 col-md-4 recent-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="recent-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_34.webp" alt="Bespoke Footwear Study &mdash; Product Paris Studio" class="recent-img w-100" loading="lazy">
+            </div>
+            <div class="recent-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="recent-card-title font-serif mb-0">Bespoke Footwear Study</h3>
+                <span class="recent-card-date text-uppercase">NOV 2024</span>
+              </div>
+              <div class="recent-card-meta text-uppercase">
+                PRODUCT / PARIS STUDIO
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Item 3: The Miller's Table -->
+          <div class="col-12 col-md-4 recent-card" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="recent-img-frame position-relative overflow-hidden mb-3">
+              <img src="assets/images/img_35.webp" alt="The Miller's Table &mdash; Documentary Zurich" class="recent-img w-100" loading="lazy">
+            </div>
+            <div class="recent-card-info">
+              <div class="d-flex align-items-baseline justify-content-between gap-2 mb-1">
+                <h3 class="recent-card-title font-serif mb-0">The Miller's Table</h3>
+                <span class="recent-card-date text-uppercase">DEC 2024</span>
+              </div>
+              <div class="recent-card-meta text-uppercase">
+                DOCUMENTARY / ZURICH
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 6: COMMISSIONS & INQUIRIES CTA BOX
+         Call to action box inviting clients to collaborate on high-concept
+         editorial and brand projects, with dual action buttons and studio locations.
+         =================================================================== -->
+    <section class="position-relative py-5" id="portfolio-inquiries">
+      <div class="container py-lg-3">
+        <div class="portfolio-inquiries-box text-center" data-aos="fade-up" data-aos-duration="700">
+          
+          <!-- Kicker -->
+          <span class="inquiries-box-kicker d-block text-uppercase fw-semibold mb-3">
+            COMMISSIONS &amp; INQUIRIES
+          </span>
+
+          <!-- Heading Title -->
+          <h2 class="inquiries-box-title font-serif mb-3">
+            Have a project in mind?
+          </h2>
+
+          <!-- Subtitle / Narrative Copy -->
+          <p class="inquiries-box-desc mx-auto mb-4 mb-md-5">
+            Let&rsquo;s create something worth remembering. We collaborate with select fashion houses, design studios, and visionary brands globally.
+          </p>
+
+          <!-- Dual Action Buttons: Start a project & Download PDF -->
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mb-4 mb-md-5">
+            <a href="#contact" class="btn btn-dark inquiries-btn-primary rounded-0 text-uppercase fw-bold">
+              <span>START A PROJECT</span>
+              <span class="btn-arrow ms-2" aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="assets/images/portfolio_hero.webp" download class="btn inquiries-btn-secondary rounded-0 text-uppercase fw-bold">
+              <span>DOWNLOAD PORTFOLIO PDF</span>
+              <span class="btn-arrow ms-2" aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+
+          <!-- Studio Locations Meta -->
+          <div class="inquiries-box-location text-uppercase fw-semibold">
+            STUDIOS IN PARIS &bull; MILAN &bull; NEW YORK
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (Reusable Component)
+       Loaded dynamically via main.js from footer.html
+       =================================================================== -->
+  <div id="site-footer"></div>
+
+  <!-- Client Auth Modal (Login / Sign Up) -->
+  <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-0" style="background-color: #faf9f5;">
+        <div class="modal-header border-bottom-0 pb-0 pt-4 px-4">
+          <div class="d-flex align-items-center gap-2">
+            <img src="assets/images/logoStackly-dark.webp" alt="Stackly" height="26">
+          </div>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 pt-3">
+          <ul class="nav nav-pills nav-fill mb-4 p-1" style="background: rgba(0,0,0,0.05);" id="authTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active fw-bold small text-uppercase py-2 rounded-0" id="login-tab" data-bs-toggle="pill" data-bs-target="#login-panel" type="button" role="tab">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fw-bold small text-uppercase py-2 rounded-0" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup-panel" type="button" role="tab">Sign Up</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="authTabContent">
+            <!-- Login Tab -->
+            <div class="tab-pane fade show active" id="login-panel" role="tabpanel">
+              <form id="loginForm" onsubmit="event.preventDefault();">
+                <div class="mb-3">
+                  <label class="form-label small text-uppercase fw-semibold tracking-wider text-muted font-xs">Email Address</label>
+                  <input type="email" class="form-control rounded-0 bg-transparent border" placeholder="client@brand.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-uppercase fw-semibold tracking-wider text-muted font-xs">Password</label>
+                  <input type="password" class="form-control rounded-0 bg-transparent border" placeholder="••••••••" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input rounded-0" type="checkbox" id="rememberMe">
+                    <label class="form-check-label small text-muted font-xs" for="rememberMe">Remember me</label>
+                  </div>
+                  <a href="#" class="small text-decoration-none text-muted font-xs">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 rounded-0 text-uppercase fw-bold py-2 tracking-wider small">Sign In</button>
+              </form>
+            </div>
+            <!-- Sign Up Tab -->
+            <div class="tab-pane fade" id="signup-panel" role="tabpanel">
+              <form id="signupForm" onsubmit="event.preventDefault();">
+                <div class="mb-3">
+                  <label class="form-label small text-uppercase fw-semibold tracking-wider text-muted font-xs">Full Name</label>
+                  <input type="text" class="form-control rounded-0 bg-transparent border" placeholder="Creative Director" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-uppercase fw-semibold tracking-wider text-muted font-xs">Work Email</label>
+                  <input type="email" class="form-control rounded-0 bg-transparent border" placeholder="name@agency.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label small text-uppercase fw-semibold tracking-wider text-muted font-xs">Create Password</label>
+                  <input type="password" class="form-control rounded-0 bg-transparent border" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100 rounded-0 text-uppercase fw-bold py-2 tracking-wider small">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Swiper 11 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Main Interactive JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
