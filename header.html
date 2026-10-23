@@ -7,11 +7,11 @@
 =================================================================== -->
 <header class="site-header sticky-top" id="site-header-nav">
   <nav class="navbar navbar-expand-lg py-2 py-lg-3" data-bs-theme="light">
-    <div class="container">
+    <div class="container position-relative">
 
-      <!-- Brand Logo: Stackly Official Logo Image -->
-      <a class="navbar-brand d-inline-flex align-items-center py-0 me-3 me-lg-4 me-xl-5" href="index.html" aria-label="Stackly Home">
-        <img src="assets/images/logoStackly-dark.webp" alt="Stackly" class="header-logo" height="26">
+      <!-- Brand Logo: Stackly Official Logo Image (Anchored Left) -->
+      <a class="navbar-brand d-inline-flex align-items-center py-0" href="index.html" aria-label="Stackly Home">
+        <img src="assets/images/logoStackly-dark.webp" alt="Stackly" class="" height="35">
       </a>
 
       <!-- Mobile Hamburger Button (Always visible on mobile & tablet < 992px) -->
@@ -25,7 +25,7 @@
         <!-- Mobile Offcanvas Header (Visible only on mobile/tablet) -->
         <div class="offcanvas-header border-bottom py-3 px-4 d-lg-none">
           <div class="d-inline-flex align-items-center gap-2" id="navbarOffcanvasLabel">
-            <img src="assets/images/logoStackly-dark.webp" alt="Stackly" class="header-logo" height="24">
+            <img src="assets/images/logoStackly-dark.webp" alt="Stackly" class="header-logo" height="40">
           </div>
           <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -33,8 +33,8 @@
         <!-- Offcanvas Body -->
         <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-between p-4 p-lg-0 w-100">
 
-          <!-- Desktop & Mobile Navigation Items -->
-          <ul class="navbar-nav align-items-lg-center gap-3 gap-xl-4 mb-3 mb-lg-0 flex-nowrap">
+          <!-- Desktop & Mobile Navigation Items (Dead-Center on Desktop) -->
+          <ul class="navbar-nav align-items-lg-center mx-lg-auto gap-3 gap-xl-4 mb-3 mb-lg-0 flex-nowrap">
             <!-- HOME (Active with solid underline) -->
             <li class="nav-item">
               <a class="nav-link active" href="index.html">HOME</a>
@@ -42,12 +42,12 @@
 
             <!-- PORTFOLIO -->
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</span></a>
+              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
             </li>
 
             <!-- SERVICES -->
             <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</span></a>
+              <a class="nav-link" href="services.html">SERVICES</a>
             </li>
 
             <!-- ABOUT -->
@@ -62,7 +62,7 @@
 
             <!-- JOURNAL -->
             <li class="nav-item">
-              <a class="nav-link" href="journal.html">JOURNAL</span></a>
+              <a class="nav-link" href="journal.html">JOURNAL</a>
             </li>
 
             <!-- CONTACT -->
@@ -71,8 +71,8 @@
             </li>
           </ul>
 
-          <!-- Right Actions (LOGIN, SIGN UP & BOOK A SHOOT button) -->
-          <div class="header-actions ms-lg-auto d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-3 gap-xl-4 pt-3 pt-lg-0 border-top border-lg-0 flex-nowrap">
+          <!-- Right Actions (LOGIN, SIGN UP & BOOK A SHOOT button - Anchored Right) -->
+          <div class="header-actions ms-lg-0 d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-3 gap-xl-4 pt-3 pt-lg-0 border-top border-lg-0 flex-nowrap">
             <div class="auth-links d-flex align-items-center justify-content-center gap-3 gap-xl-4">
               <a href="login.html" class="nav-link auth-link">LOGIN</a>
               <a href="register.html" class="nav-link auth-link">SIGN UP</a>

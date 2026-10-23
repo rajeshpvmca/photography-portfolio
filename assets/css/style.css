@@ -53,7 +53,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-dark);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -79,7 +79,20 @@ a {
 /* ==========================================================================
    3. HEADER & NAVIGATION STYLES (Bootstrap 5 Header)
    ========================================================================== */
+#site-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+  margin: 0;
+  padding: 0;
+}
+
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -92,7 +105,7 @@ a {
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .site-header .navbar {
@@ -115,16 +128,7 @@ a {
   align-items: center;
 }
 
-@media (min-width: 992px) {
-  .navbar-brand {
-    margin-right: 2.5rem !important;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-brand {
-    margin-right: 3.5rem !important;
-  }
-}
+
 
 .site-header .nav-link {
   font-family: var(--font-sans);
@@ -175,14 +179,62 @@ a {
   transition: transform 0.2s ease;
 }
 
-/* Header spacing across breakpoints */
+/* Desktop Header 3-Part Layout: Left Logo, Dead-Center Menus, Right Actions */
 @media (min-width: 992px) {
-  .site-header .navbar-nav {
-    gap: 1.35rem !important;
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
   }
+
+  .site-header .navbar-brand {
+    margin-right: 0 !important;
+    flex: 1 0 0%;
+    max-width: 260px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .site-header .offcanvas {
+    flex-grow: 1;
+    display: flex;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  .site-header .offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .site-header .navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem !important;
+  }
+
   .site-header .header-actions {
+    margin-left: 0 !important;
+    flex: 1 0 0%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 1.4rem !important;
   }
+
   .site-header .auth-links {
     gap: 1.25rem !important;
   }
@@ -197,6 +249,30 @@ a {
   }
   .site-header .auth-links {
     gap: 1.6rem !important;
+  }
+}
+
+/* Compact mobile navbar rules down to 320px */
+@media (max-width: 575.98px) {
+  .site-header .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-logo {
+    height: 22px;
+  }
+  .navbar-toggler {
+    padding: 4px 6px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .site-header .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .header-logo {
+    height: 20px;
   }
 }
 
@@ -8204,6 +8280,13 @@ body.bookaslot-page {
 
 /* Header */
 .error-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(18, 18, 20, 0.08);
   padding: 1.25rem 0;
